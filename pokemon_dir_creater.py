@@ -1,8 +1,8 @@
 import os
 
 # location of csv and where to store images
-pokemon_csv = '/home/aj/PokeRap/Pokemon/data/pokemon.csv'
-path = '/home/aj/PokeRap/Pokemon/'
+pokemon_csv = 'D:/PokeRapper/Pokemon/data/pokemon.csv'
+path = 'D:/PokeRapper/Pokemon/'
 
 
 # open pokemon_csv as read only and set its variable as pokemon_data

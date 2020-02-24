@@ -28,7 +28,7 @@ def find_filter_words(search_word, similar_words):
                 filter_words += ' -' + word
     return filter_words
 
-data_dir = "/home/aj/PokeRap/Pokemon"
+data_dir = 'D:/PokeRapper/Pokemon/'
 pokemon_list = os.listdir(data_dir)
 
 response = google_images_download.googleimagesdownload()
@@ -45,7 +45,7 @@ for pokemon in pokemon_list:
             arguments["keywords"] = "\"" + alternate_form + "\"" + filter_words + " -shiny"
             print("The keywords for pokemon " + str(alternate_form) + " is " + str(arguments["keywords"]))
             arguments["limit"] = 100
-            arguments["output_directory"] = "/home/aj/PokeRap/Pokemon/"
+            arguments["output_directory"] = 'D:/PokeRapper/GoogleImagesPokemon/'
             arguments["image_directory"] = pokemon + "/" + alternate_form
             response.download(arguments)
             print("Downloaded images for pokemon: " + alternate_form)
@@ -58,14 +58,14 @@ for pokemon in pokemon_list:
         arguments["keywords"] = "\"" + pokemon + "\"" + filter_words + " -shiny"
         print("The keywords for pokemon " + str(pokemon) + " is " + str(arguments["keywords"]))
         arguments["limit"] = 100
-        arguments["output_directory"] = "/home/aj/PokeRap/Pokemon/"
+        arguments["output_directory"] = 'D:/PokeRapper/GoogleImagesPokemon/'
         arguments["image_directory"] = pokemon
         response.download(arguments)
         print("Downloaded images for pokemon: " + pokemon)
     else:
         arguments["keywords"] = "\"" + pokemon + "\"" + " -shiny"
         arguments["limit"] = 100
-        arguments["output_directory"] = "/home/aj/PokeRap/Pokemon/"
+        arguments["output_directory"] = 'D:/PokeRapper/GoogleImagesPokemon/'
         arguments["image_directory"] = pokemon
         response.download(arguments)
         print("Downloaded images for pokemon: " + pokemon)
