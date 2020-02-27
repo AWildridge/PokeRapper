@@ -95,7 +95,7 @@ ITEM_PIPELINES = {
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
  	
-IMAGES_STORE = "/home/aj/PokeRap/Pokemon"
+IMAGES_STORE = "D:/PokeRapper/Pokemon/"
 
 # Enables scrapy to parse a URL even if it has been parsed already
 DUPEFILTER_CLASS = 'scrapy.dupefilters.BaseDupeFilter'
